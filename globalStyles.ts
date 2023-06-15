@@ -1,5 +1,6 @@
 'use client'
 import { createGlobalStyle } from 'styled-components';
+import './app/globals.css'
  
 export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -24,9 +25,40 @@ export const GlobalStyle = createGlobalStyle`
 
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    letter-spacing: 0;
   }
 
   #root, #__next {
     isolation: isolate;
+  }
+
+  /* titles */
+  h1 {
+    font-size: 96px;
+    font-weight: bolder;
+    line-height: 80%;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 80%;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 200px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
   }
 `;
