@@ -1,7 +1,7 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import StyledComponentsRegistry from '@/lib/registry'
-import { GlobalStyle } from '@/globalstyles'
+import { GlobalStyle } from '../globalStyles'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
