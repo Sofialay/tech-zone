@@ -1,9 +1,12 @@
-import styles from './page.module.css'
+'use client'
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Tech Zone</h1>
+    <main>
+      <Navbar/>
+      <Hero/>
     </main>
   )
 }

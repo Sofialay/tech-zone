@@ -34,9 +34,8 @@ export const GlobalStyle = createGlobalStyle`
 
   /* titles */
   h1 {
-    font-size: 96px;
+    font-size: 48px;
     font-weight: bolder;
-    line-height: 80%;
   }
 
   h2 {
@@ -50,7 +49,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (min-width: 1024px) {
     h1 {
-      font-size: 200px;
+      font-size: 64px;
     }
 
     h2 {
